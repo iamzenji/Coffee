@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee POS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Coffee POS</h1>
+
+    <div class="row" id="coffee-list">
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/mocha.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Mocha" onclick="openModal('Mocha')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mocha</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/latte.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Latte" onclick="openModal('Latte')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Latte</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/espresso.jpg" class="card-img-top" style="height: 150px; object-fit: cover;"alt="Espresso" onclick="openModal('Espresso')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Espresso</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Americano.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Americano" onclick="openModal('Americano')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Americano</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Cortado.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Cortado" onclick="openModal('Cortado')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cortado</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Affogato.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Affogato" onclick="openModal('Affogato')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Affogato</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Ristretto.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Ristretto" onclick="openModal('Ristretto')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ristretto</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Frappe.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Frappe" onclick="openModal('Frappe')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Frappe</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Doppio.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Doppio" onclick="openModal('Doppio')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Doppio</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Lungo.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Lungo" onclick="openModal('Lungo')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Lungo</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Red Eye.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Red Eye" onclick="openModal('Red Eye')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Red Eye</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card" style="width: 100%; max-width: 250px; margin: auto;">
+                <img src="image/Breve.jpg" class="card-img-top" style="height: 150px; object-fit: cover;" alt="Breve" onclick="openModal('Breve')">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Breve</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <h2 class="mt-5">Cart</h2>
+    <ul id="cart" class="list-group mb-4"></ul>
+    <h4 id="total" class="mt-3">Total: ₱0</h4>
+    <button class="btn btn-success" onclick="checkout()">Checkout</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="coffeeModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="coffeeModalLabel">Select Coffee Options</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 id="coffeeName"></h5>
+
+                <label for="size" class="form-label">Select Size:</label>
+                <select id="size" class="form-select mb-2" onchange="updatePrice()">
+                    <option value="Small">Small - ₱100</option>
+                    <option value="Medium">Medium - ₱120</option>
+                    <option value="Large">Large - ₱140</option>
+                </select>
+
+                <label for="grams" class="form-label">Select Grams:</label>
+                <select id="grams" class="form-select mb-2">
+                    <option value="1">1 gram</option>
+                    <option value="2">2 grams</option>
+                    <option value="3">3 grams</option>
+                </select>
+
+                <label for="sugar" class="form-label">Percentage of Sugar:</label>
+                <select id="sugar" class="form-select mb-2">
+                    <option value="No Sugar">No Sugar</option>
+                    <option value="25%">25%</option>
+                    <option value="50%">50%</option>
+                    <option value="75%">75%</option>
+                    <option value="100%">100%</option>
+                </select>
+
+                <label for="temperature" class="form-label">Select Temperature:</label>
+                <select id="temperature" class="form-select mb-2">
+                    <option value="Hot">Hot</option>
+                    <option value="Cold">Cold</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="addToCartFromModal()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
